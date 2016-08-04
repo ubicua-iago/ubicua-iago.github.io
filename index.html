@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> SKY </title>
+
+  <link rel = "stylesheet" href = "css/bootstrap.css">
+  <link rel = "stylesheet" href = "css/sky.css">
+  <link rel = "stylesheet" href = "css/awesome.min.css">
+</head>
+<body  id = "i">
+  <div class = "container text-center white-color">
+      <div id = "two">
+        <div id = "one">
+           <img src = "img/logo.png" class = "logo-enter">
+           <p class = "effect">A internet que chega à sua casa para levar você mais longe.</p>
+        </div>
+      </div>
+      <div id = "end">
+        <div class = "items">
+          <p id = "a"><i class="fa fa-wifi" aria-hidden="true"></i> Wi-fi grátis</p>
+          <p id = "b"><i class="fa fa-phone" aria-hidden="true"></i> Não precisa ter uma linha telefônica</p>
+          <p id = "c"><i class="fa fa-bolt" aria-hidden="true"></i> Instalação fácil, grátis e sem fio</p>
+        </div>
+          <button class = "btn btn-default red btn-larg">VERIFIQUE AS OFERTAS</button>
+      </div>
+  </div>
+  <!-- Java Script -->
+  <script src = "js/jquery.min.js"></script>
+  <script src = "js/bootstrap.min.js"></script>
+  <script src = "js/mask.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#one').fadeIn();
+        }, 300);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#end').fadeIn();
+        }, 3700);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#a').fadeIn();
+        }, 3900);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#b').fadeIn();
+        }, 4100);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#c').fadeIn();
+        }, 4300);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('.red').fadeIn();
+        }, 4500);
+      });
+
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('.effect').fadeOut(300, function() { $(this).remove(); });
+        }, 3000);
+      });
+    </script>
+  <script>
+      $(document).ready(function(){
+        $('#cep').mask('00000-000');
+      });
+    </script>
+    <script type="text/javascript">
+      setTimeout(function () {
+      $('#one')
+        .find('.logo-enter')
+        .animate({
+          bottom: 140
+        },
+        'slow'
+      );
+      }, 3500);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title> SKY </title>
+
+	<link rel = "stylesheet" href = "../css/bootstrap.css">
+	<link rel = "stylesheet" href = "../css/sky.css">
+</head>
+<body>
+	<div class = "container text-center">
+	<div id = "fad">
+		<img src = "../img/logo.png">
+		<p class = "text">Desculpe, o serviço ainda não está disponível em sua região.</p>
+	</div>
+	</div>
+	<!-- Java Script -->
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#fad').fadeIn();
+        }, 200);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#fad').fadeOut();
+        }, 2000);
+      });
+    </script>
+    <script> 
+      setTimeout('window.close()',2500); 
+    </script>
+</body>
+</html>

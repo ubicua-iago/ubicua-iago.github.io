@@ -1,0 +1,218 @@
+body {
+	background-color: rgb(255, 0, 0);
+}
+
+.white-color {
+    color: white;
+}
+
+.logo-enter {
+	margin: 150px 0 20px 0;
+    position: relative;
+}
+
+#googleMap {
+    margin: 0 5%;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+.hide {
+	display: none;
+}
+
+.btn-larg {
+    width: 210px;
+}
+
+#fad {
+    display: none;
+    margin-top: 150px;
+    color: white;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+h3 strong {
+    color: #fe6700;
+    font: bold 2.8em/1em 'Sky Text';
+    display: block;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "skyBold";
+    src: url("../fonts/pfdintextpro-bold-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "skyMedium";
+    src: url("../fonts/pfdintextpro-medium-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "skyRegular";
+    src: url("../fonts/pfdintextpro-regular-webfont.woff") format('woff');
+}
+
+.container {
+	font-family: skyMedium;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+.z {
+    background-color: blue;
+}
+
+.controls {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#one {
+    display: none;
+    height: 60px !important;
+}
+
+#end {
+    display: none;
+}
+
+.logo-end {
+    margin: 15px 0 30px 0;
+}
+
+.black-color {
+    color: black;
+}
+
+.items {
+    text-align: left;
+    margin-top: 50px;
+}
+
+#a {
+    display: none;
+}
+
+#b {
+    display: none;
+}
+
+#c {
+    display: none;
+}
+
+.red {
+    margin-top: 100px;
+    color: red;
+    display: none;
+}
+
+i {
+    width: 20px;
+    text-align: center;
+}
+
+#i {
+    background: url("../img/transparent.png") no-repeat right top #e0180c;
+}
+
+.r {
+    margin: 20px 0;
+}
+
+.number {
+    color: #fe6700;
+    font-size: 60px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: -20px;
+}
+
+.mega {
+    font-size: 20px;
+    font-weight: 700;
+    color: #484848;
+    display: block;
+}
+
+.desc {
+    color: #484848;
+}
+
+.price {
+    color: #484848;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.rs {
+    border: 1px solid #fe6700;
+    background-color: #fe6700;
+    border-radius: 30px;
+    padding: 0.4em 0.3em;
+    margin-left: 3px;
+    color: white;
+}
+
+.valor_c {
+    color: #484848;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: normal;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1em;
+    padding: 0;
+}
+
+.hehe {
+    display: block;
+    margin-bottom: -7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
