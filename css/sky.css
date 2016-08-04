@@ -11,6 +11,15 @@ body {
     position: relative;
 }
 
+.qa {
+    padding: 0 !important;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+}
+
 #googleMap {
     margin: 0 5%;
 }
@@ -159,7 +168,7 @@ h3 strong {
 }
 
 .red {
-    margin-top: 100px;
+    margin-top: 120px;
     color: #fe6700;
     display: none;
 }
