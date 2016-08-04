@@ -19,6 +19,10 @@ body {
 	margin-top: 30px;
 }
 
+.zz {
+    margin-bottom: 20px;
+}
+
 .kjkj {
     padding: 20px 0;
 }
@@ -115,8 +119,18 @@ h3 strong {
     display: none;
 }
 
+.top-bar {
+    background-color: #fe6700;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
 .logo-end {
     margin: 15px 0 30px 0;
+}
+
+.logo-k {
+    margin: 15px 0;
 }
 
 .logo-z {
@@ -146,7 +160,7 @@ h3 strong {
 
 .red {
     margin-top: 100px;
-    color: red;
+    color: #fe6700;
     display: none;
 }
 
@@ -156,7 +170,7 @@ i {
 }
 
 #i {
-    background: url("../img/transparent.png") no-repeat right top #e0180c;
+    background: url("../img/bg_home.jpg") no-repeat center top #F6BC01;
 }
 
 .r {
@@ -241,7 +255,6 @@ a:link {
 }
 
 .select {
-    margin-top: -15px;
     font-size: 16px;
 }
 
