@@ -206,11 +206,12 @@ i {
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: normal;
-    width: 50px;
+    width: 70px;
     display: inline-block;
     text-align: center;
     line-height: 1em;
     padding: 0;
+    margin-left: -10px !important;
 }
 
 .hehe {
