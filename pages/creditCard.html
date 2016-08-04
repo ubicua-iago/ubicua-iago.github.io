@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> SKY </title>
+
+	<link rel = "stylesheet" href = "../css/bootstrap.css">
+	<link rel = "stylesheet" href = "../css/sky.css">
+</head>
+<body id = "i">
+	<div class = "container text-center">
+		<img src = "../img/logo.png" class = "logo-z">
+    <h4 class = "white-color">Informações de Pagamento</h4>
+		<form class = "kj">
+    		<div class="form-container ">
+    				<div class="card-wrapper"></div>
+              <div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      				<input id="column-left" type="text" name="first-name" class = "form-control" placeholder="Nome"/>
+              </div>
+      				<div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      				<input id="column-right" type="text" name="last-name" class = "form-control" placeholder="Sobrenome"/>
+              </div>
+      				<div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+      				<input id="input-field" type="text" name="number" class = "form-control" placeholder="Número do cartão"/>
+              </div>
+      				<div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      				<input id="column-left" type="text" name="expiry" class = "form-control" placeholder="Mês/Ano"/>
+              </div>
+      				<div style="margin-bottom: 25px" class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      				<input id="column-right" type="text" name="cvc" class = "form-control" placeholder="CCV"/>
+      				</div>
+      				<button class="btn btn-warning l" type="button" onclick = "window.location.href = 'end.html'">CONFIRMAR</button>
+      				<div class = "space"></div>
+    	</form>
+  	</div>
+
+	<!-- Java Script -->
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+	<script src = "../js/mask.min.js"></script>
+	<script src='../js/carding.js'></script>
+	<script src='../js/jquery.card.js'></script>
+	<script src = "../js/card.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#one').fadeIn();
+        }, 300);
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#two').fadeOut();
+        }, 3000);
+      });
+    </script>
+	<script>
+      $(document).ready(function(){
+        $('#number').mask('00000-000');
+      });
+    </script>
+</body>
+</html>

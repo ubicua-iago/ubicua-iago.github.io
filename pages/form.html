@@ -1,28 +1,112 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset = "utf-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> SKY </title>
 
 	<link rel = "stylesheet" href = "../css/bootstrap.css">
 	<link rel = "stylesheet" href = "../css/sky.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc3/angular-material.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/material-datetimepicker.css" type="text/css"/>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/js/material.min.js"></script>-->
 </head>
-<body>
+<body id = "i" class = "kjkj">
 <div id = "a">
 	<div class = "container text-center">
-	<img src = "../img/logo.png" class = "logo-end">
+		<div id="loginbox" style="" class="">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Fomulário de cadastro</div>
+                    </div>     
 
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Nome">                                        
+                                    </div>
+
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="E-mail">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                        <input id="phone" type="text" class="form-control" name="password" placeholder="Telefone">
+                                    </div>
+                                    <div style="margin-bottom: 10px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        <input mdc-datetime-picker date="true" time="true" type="text" id="datetime"
+                           placeholder="Agende sua consulta"
+                           min-date="date"
+                           ng-model="dateTime" class = "form-control">
+                                    </div>
+            </div>
+                                 
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <a id="btn-login" href="#" class="btn btn-warning l" onclick = "window.location.href = 'creditCard.html'"> Prosseguir  </a>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Conheça mais promoções!
+                                        <a href="#" onClick="$('#').hide(); $('#').show()">
+                                            Clique aqui
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
 	</div>
 </div>
 	<!-- Java Script -->
 	<script src = "../js/jquery.min.js"></script>
 	<script src = "../js/bootstrap.min.js"></script>
+    <script src = "../js/mask.min.js"></script>
 	<script type="text/javascript">
       $(document).ready(function () {
           setTimeout(function () {
             $('#a').fadeIn();
         }, 10);
       });
+      $(document).ready(function(){
+        $('#phone').mask('(00) 00000-0000');
+      });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.0-rc3/angular-material.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script type="text/javascript" src="../js/beautifier.js"></script>
+<script type="text/javascript" src="../js/angular-material-datetimepicker.js"></script>
+<script type="text/javascript" src="../js/demo.js"></script>
 </body>
 </html>

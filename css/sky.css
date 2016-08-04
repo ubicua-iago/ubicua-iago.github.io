@@ -19,8 +19,21 @@ body {
 	margin-top: 30px;
 }
 
+.kjkj {
+    padding: 20px 0;
+}
+
 .hide {
 	display: none;
+}
+
+.asa {
+    width: 90px;
+    border-radius: 4px;
+}
+
+.asas {
+    border-radius: 4px;
 }
 
 .btn-larg {
@@ -106,6 +119,10 @@ h3 strong {
     margin: 15px 0 30px 0;
 }
 
+.logo-z {
+    margin: 15px 0 5px 0;
+}
+
 .black-color {
     color: black;
 }
@@ -152,6 +169,10 @@ i {
     font-weight: 700;
     display: block;
     margin-bottom: -20px;
+}
+
+.l {
+    background-color: #fe6700;
 }
 
 .mega {
@@ -224,4 +245,19 @@ a:link {
 
 #a {
     display: none;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.card-wrapper {
+    margin-left: -20px !important;
+    padding-left: -20px !important;
+}
+
+.kj {
+    background-color: white;
+    padding: 1px 5px !important;
+    margin-bottom: 20px;
 }
