@@ -24,7 +24,7 @@
           <p id = "b"><i class="fa fa-phone" aria-hidden="true"></i> Não precisa ter uma linha telefônica</p>
           <p id = "c"><i class="fa fa-bolt" aria-hidden="true"></i> Instalação fácil, grátis e sem fio</p>
         </div>
-          <button class = "btn btn-default red btn-larg">VERIFIQUE AS OFERTAS</button>
+          <button class = "btn btn-default red btn-larg" onclick = "window.location.href = 'pages/plans.html'">VERIFIQUE AS OFERTAS</button>
       </div>
   </div>
   <!-- Java Script -->
@@ -45,22 +45,22 @@
       $(document).ready(function () {
           setTimeout(function () {
             $('#a').fadeIn();
-        }, 3900);
-      });
-      $(document).ready(function () {
-          setTimeout(function () {
-            $('#b').fadeIn();
         }, 4100);
       });
       $(document).ready(function () {
           setTimeout(function () {
-            $('#c').fadeIn();
+            $('#b').fadeIn();
         }, 4300);
       });
       $(document).ready(function () {
           setTimeout(function () {
-            $('.red').fadeIn();
+            $('#c').fadeIn();
         }, 4500);
+      });
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('.red').fadeIn();
+        }, 4700);
       });
 
     </script>

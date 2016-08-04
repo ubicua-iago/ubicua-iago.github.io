@@ -7,9 +7,11 @@
 	<link rel = "stylesheet" href = "../css/bootstrap.css">
 	<link rel = "stylesheet" href = "../css/sky.css">
 </head>
-<body>
-	<div class = "container text-center">
+<body id = "i">
+<div id = "a">
+	<div class = "container text-center white-color">
 		<img src = "../img/logo.png" class = 'logo-end'>
+		<p class = "select">Qual é a melhor velocidade para você?</p>
 		<a href = "#" data-toggle="modal" data-target="#myModal"><div class = "well">
 			<span class = "number">2</span>
 			<span class = "mega">MEGA</span><br>
@@ -23,6 +25,7 @@
 			<span class = "price">119</span><span class = "valor_c">,90 POR MÊS</span>
 		</div></a>
 	</div>
+</div>
 
 	<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -37,7 +40,7 @@
         Deseja prosseguir?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Sim</button>
+        <button type="button" class="btn btn-primary" onclick = "window.location.href = 'form.html'">Sim</button>
       </div>
     </div>
   </div>
@@ -46,5 +49,12 @@
 	<!-- Java Script -->
 	<script src = "../js/jquery.min.js"></script>
 	<script src = "../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function () {
+          setTimeout(function () {
+            $('#a').fadeIn();
+        }, 10);
+      });
+    </script>
 </body>
 </html>
